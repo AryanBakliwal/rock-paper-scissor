@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic R-P-S</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.rtl.min.css"
+      integrity="sha512-LbSN0zUc47h+h7KpimHiKIjJWcf2lLP5+mtzJFXcklWfITRR1pv4+qWFkHt5qIAdy8RrX7ejRym0JxtKj6I45w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+          rock - fa-solid fa-hand-back-fist
+          paper - fa-solid fa-hand
+          scissor - fa-solid fa-hand-peace
+      -->
+    <div class="container">
+      <h1>Rock-Paper-Scissors</h1>
+      <div class="row grid">
+        <div id="computer" class="col">
+          <h3>COMPUTER</h3>
+          <h6>Score:<span class="comp-score">0</span></h6>
+          <div class="icon"><i id="comp-icon" class=""></i></div>
+        </div>
+        <div id="user" class="col">
+          <h3>YOU</h3>
+          <h6>Score:<span class="user-score">0</span></h6>
+          <div class="icon"><i id="user-icon" class=""></i></div>
+        </div>
+        <div id="buttons" class="row">
+          <div class="col"><button id="rock">Rock</button></div>
+          <div class="col"><button id="paper">Paper</button></div>
+          <div class="col"><button id="scissor">Scissor</button></div>
+        </div>
+        <button class="clear col">NEW GAME</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
